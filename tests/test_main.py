@@ -7,7 +7,4 @@ def test_greet():
     assert greet("World") == "Hello, World!"
 
 def test_add(): 
-    assert add(5,7) == 12  
-
-
-    
+    assert add(5,7) == 12
