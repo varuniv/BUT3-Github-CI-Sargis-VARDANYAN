@@ -1,3 +1,4 @@
+""" great """
 def greet(name):
     """_doc_"""
     return f"Hello, {name}!"
