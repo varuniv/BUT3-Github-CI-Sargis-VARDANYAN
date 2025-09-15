@@ -8,4 +8,4 @@ def greet(name):
 
 
 # if __name__ == "__main__":
-    #p rint(greet("GitLab CI/CD"))
+    # print(greet("GitLab CI/CD"))
