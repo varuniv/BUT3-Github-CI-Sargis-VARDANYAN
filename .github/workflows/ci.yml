@@ -22,6 +22,11 @@ jobs:
     - name: test path
       run: |
         PYTHONPATH=./src pytest -cov=src tests/
+    - run: mkdir -p rapport
+    - run: touch rapport/rapport.txt
+    - run: echo "Rapport de test" >> rapport/rapport.txt
+    - name: Upload a Build Artifact
+      uses: actions/upload-artifact@v4.6.2
     - name: Analysing the code with pylint
       run: |
         flake8 $(git ls-files '*.py')
