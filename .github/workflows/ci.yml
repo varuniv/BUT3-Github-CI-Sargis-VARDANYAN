@@ -9,6 +9,8 @@ jobs:
       matrix:
         python-version: ["3.8", "3.9", "3.10"]
     steps:
+    - name: Upload a Build Artifact
+    - uses: actions/upload-artifact@v4.6.2
     - uses: actions/checkout@v4
     - name: Set up Python ${{ matrix.python-version }}
       uses: actions/setup-python@v3
@@ -25,4 +27,5 @@ jobs:
     - name: Analysing the code with pylint
       run: |
         flake8 $(git ls-files '*.py')
+        
     
