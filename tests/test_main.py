@@ -19,4 +19,4 @@ def test_add():
 def test_sub():
     """test sub"""
 
-    assert add(9, 7) == 2
+    assert sub(9, 7) == 2
